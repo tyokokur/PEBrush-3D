@@ -45,6 +45,7 @@ Outputs
 
 ## Data visualization
 Inputs: `ph*.dat` with corresponding box size, discretization, etc.
+
 Outputs: Matplotlib, Plotly figures of polymer density heatmaps and isosurfaces
 
 
