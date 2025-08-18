@@ -10,6 +10,8 @@ TODO: some figures here
 # File tree
 - `bin/`: C codes used for SCFT calculations
 - `demo/`: Example results generated for a systematic study of PE brushes under varying interchain and intrachain electrostatic repulsion
+- `LICENCE`: Standard MIT license
+- `readme.md`: This readme file
 - `theory.pdf`: Concise derivation of key equations following standard buildup (see G. H. Fredrickson, Oxford Press, 2006)
 - `vis/`: Python codes used for visualizations
   
