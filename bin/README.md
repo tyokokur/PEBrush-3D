@@ -18,6 +18,9 @@ Although the `demo` does not require a previous run's results as an input, obtai
 - `init_opt = 1` takes in a seed file of name specified in `input.h` (`Win[30`) with the format of previously written `W_a*.dat` field files. Although these files written in 1D format, the dimensions of the original system are required to be inputted in `input.h`. If the current box is greater than the box of the seed, the edges of the previous calculations are used to fill in the areas of the larger box.
 - `init_opt = -99` takes in a seed file but fills larger box sizes with fields corresponding to pure solvent.
 
+# Convergence
+For non-trivial PE brush morphologies, convergence using the techniques used in these codes can be very challenging. While Anderson Mixing is employed for accelerating convergence, several adaptations were made to increase stability. The mixing parameters `wand` and `wcmp` in `input.h` are the primary hyperparameters used to bias the algorithm towards speed or stability, respectively. `wand` generally determines how faithfully the calculations should follow the fields recommended by Anderson Mixing. `wcmp` modifies the fields based on how far each point is from satisfying the local incompressibility condition, $\phi_p + \phi_s = 1$. Generally, `wand = wcmp = 0.1` provides stable performance. `wand = 0.2, wcmp = 0.01` can be used when the seed file is thought to be relativelyclose to convergence.
+
 # Batch runs
 `./submit/` contains utilities for submitting single jobs (`submit.sh`, set up for use on Purdue Anvil CPU) and batch jobs (`submit_loop.c`). `submit_loop_in.txt` contains the changes between the batch jobs of the file on the first line (e.g., `input.h`). The integer preceeding `!` is the line number of the change and the text afterwards is what the line should be replaced with. The batch jobs are named after the parent folder and then the number of that copy (e.g., `folder.1`, `folder.2`). 
 
