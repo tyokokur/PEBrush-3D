@@ -15,7 +15,7 @@ Only small changes are needed in most of the code to consider these changes, but
 # Seed strategies
 Although the `demo` does not require a previous run's results as an input, obtaining non-trivial PE brush morphologies often require seeds to ensure stable convergence. The parameter `init_opt` in `input.h` determines how the fields are initialized. 
 - For `init_opt = 0`, the fields are seeded for a system with constant polymer fraction throughout the box. This is enough for very simple morphologies.
-- `init_opt = 1` takes in a seed file of name specified in `input.h` (`Win[30`) with the format of previously written `W_a*.dat` field files. Although these files written in 1D format, the dimensions of the original system are required to be inputted in `input.h`. If the current box is greater than the box of the seed, the edges of the previous calculations are used to fill in the areas of the larger box.
+- `init_opt = 1` takes in a seed file of name specified in `input.h` (`Win[30]`) with the format of previously written `W_a*.dat` field files. Although these files written in 1D format, the dimensions of the original system are required to be inputted in `input.h`. If the current box is greater than the box of the seed, the edges of the previous calculations are used to fill in the areas of the larger box.
 - `init_opt = -99` takes in a seed file but fills larger box sizes with fields corresponding to pure solvent.
 
 # Convergence
