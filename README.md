@@ -24,7 +24,7 @@ Dependencies
 
 ## SCFT Calculations
 Inputs
-- Initial guess (seed): options for polymer field $w(\mathbf{r})$ or polymer density distribution $\phi_p(\mathbf{r})$
+- Initial guess (seed): options for polymer field _w(**r**)_ or polymer density distribution $\phi_p$(**r**)
 - Polymer
   - Backbone charge fraction $\alpha$ (currently only homogeneous, though framework for multiblock has been built)
   - Flory--Huggins interaction parameter $\chi$ (currently only homogeneous, though framework for multiblock has been built)
