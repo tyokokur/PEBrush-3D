@@ -8,4 +8,4 @@ Polymer parameters backbone charge fraction $\alpha$ and polymer hydrophobicity 
 Physical constants, grid discretization lengths, and other unfrequently changed parameters are set in `./src/consts.h`.
 
 # Setup
-The only setup necessary should be to specify the location of the FFTW library on your setup. 
+The only setup necessary should be to ensure FFTW and OMP can be accessed by `make` through `lfftw` and `lfftw_threads`.
