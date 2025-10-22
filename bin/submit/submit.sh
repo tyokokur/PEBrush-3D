@@ -14,7 +14,6 @@
 #SBATCH --open-mode=append
 #SBATCH --nodes=1                # Must be 1 for OpenMP jobs
 #SBATCH --ntasks-per-node=1      # Tasks per node
-#SBATCH --mail-user=takashi.yokokura@berkeley.edu
 #SBATCH --mail-type=END,FAIL,INVALID_DEPEND,REQUEUE,STAGE_OUT
 
 # Clean (Same as make clean but don't destroy current output file)
