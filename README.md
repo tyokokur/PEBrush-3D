@@ -12,6 +12,7 @@ TODO: some figures here
 - `demo/`: Example results generated for a systematic study of PE brushes under varying interchain and intrachain electrostatic repulsion
 - `LICENCE`: Standard MIT license
 - `readme.md`: This readme file
+- `theory-full.pdf`: Derivation of self-consistent field equations
 - `theory.pdf`: Concise derivation of key equations following standard buildup (see G. H. Fredrickson, Oxford Press, 2006)
 - `vis/`: Python codes used for visualizations
   
