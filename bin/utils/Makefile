@@ -1,4 +1,4 @@
-PROGRAM = tjygo
+PROGRAM = pe-go
 SRCS    = main.c setup.c FFT_solve.c DGC.c PB.c gets.c report.c
 
 OBJDIR = ./bin/obj
