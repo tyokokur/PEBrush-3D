@@ -4,8 +4,13 @@ Codes and associated visualization codes for full (3D), self-consistent field th
 Author: Yokokura, T. J. as part of the Prof. Rui Wang Group in the Chemical and Biomolecular Engineering Dept. at UC Berkeley. Please direct questions at ruiwang325(at)berkeley.edu.
 
 # Demo 
+Once converged, the calculations yield polymer density distributions for the system at equilibrium. For example, the effect of grafting density can be explored. Sparse brushes with hydrophobic interactions dominating tend to form clusters of pinned micelles (left); dense brushes stretch far into the solution (right).
 
-TODO: some figures here
+<img src=/vis/sample-micelle.png height="225"/> <img src=/vis/sample-homogeneous.png height="300"/> 
+
+Lateral inhomogeneities in only one axis of the grafting plane can also be explored. For example, cylinder-like aggregates formed by highly charged polyelectrolytes (left) can further melt to form stripes with tops deformed into beads (right).
+
+<img src=/vis/sample-cylinder.png height="250"/> <img src=/vis/sample-cylstripe.png height="275"/> 
 
 # File tree
 - `bin/`: C codes used for SCFT calculations
