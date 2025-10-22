@@ -2,7 +2,7 @@
 Overview of codes used for systematic study of interchain and intrachain electrostatic repulsion. Other functions not used in the calculations can be found in the code; however, they have not been validated and may contain mistakes.
 
 # Main files
-Minimum working example in the above `demo` can be run by copying the contents of `./utils/` into the present working directory, running `$ make`, and then `$ ./pe-go`. 
+Calculations can be run by copying the contents of `./utils/` into the present working directory, running `$ make`, and then `$ ./pe-go`. 
 The `Makefile` links the source C codes in `./src/`. The script `pe-go` is placed in the present working directory with the compiled codes in `./obj/`.
 
 Polymer parameters backbone charge fraction $\alpha$ and polymer hydrophobicity $\chi$ can be set in `ac.txt`. 
