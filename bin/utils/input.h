@@ -14,7 +14,7 @@ int win_ny = 25;
 int win_nz = 250;
 
 // Seed strategy
-int init_opt = 1;
+int init_opt = 0;
 
 // System
 double lx = 5.00;
@@ -23,8 +23,8 @@ double lz = 50.0;
 double DGC_lzmax = 45.0;
 
 // Files
-char seq_file[30] = "../ac.txt";
-char Win[30] = "../W_in.dat";
+char seq_file[30] = "ac.txt";
+char Win[30] = "W_in.dat";
 
 
 /*****************************
@@ -37,7 +37,7 @@ double c0_minus = 10e-03;
 
 // Block Polymer 
 double b0 = 1.00;
-double v0 = 4.19; // Add decimal points
+double v0 = 4.19; 
 
 // Initialization
 double xCmax   = 0.60;
